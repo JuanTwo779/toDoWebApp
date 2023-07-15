@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import java.util.Arrays;
 
 @Configuration
-@ComponentScan("com.omega.springframework.examples.a1")
+@ComponentScan
 public class SimpleSpringLauncherApplication {
 
     public static void main(String[] args) {
