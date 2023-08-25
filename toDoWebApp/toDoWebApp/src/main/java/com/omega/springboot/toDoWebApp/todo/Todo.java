@@ -1,5 +1,7 @@
 package com.omega.springboot.toDoWebApp.todo;
 
+import jakarta.validation.constraints.Size;
+
 import java.time.LocalDate;
 
 //Static List of todoes => Database (H2, MySQL)
@@ -8,6 +10,7 @@ public class Todo {
 
     private int id;
     private String username;
+    @Size(min = 8, message = "Enter at least 8 characters")
     private String description;
     private LocalDate targetDate;
     private boolean done;
